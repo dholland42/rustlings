@@ -1,0 +1,11 @@
+{
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": ".."
+    },
+    "extensions": [
+        "rust-lang.rust"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/opt/rustlings,type=bind,consistency=cached",
+    "workspaceFolder": "/opt/rustlings"
+}
